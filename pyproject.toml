@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flake8-markdown"
+version = "0.1.0"
+description = ""
+authors = ["John Franey <johnfraney@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flake8 = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+flake8-markdown = 'flake8_markdown:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

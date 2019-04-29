@@ -2,7 +2,10 @@ import argparse
 import glob
 import re
 import subprocess
+import sys
 from concurrent.futures import ThreadPoolExecutor
+
+__version__ = '0.1.0'
 
 
 def non_matching_lookbehind(pattern):
@@ -65,15 +68,24 @@ def lint_markdown_file(markdown_file_path):
     if linting_errors:
         linting_error_output = '\n'.join(linting_errors)
         print(linting_error_output)
+        return False
+
+    return True
 
 
 def lint_markdown_glob(markdown_glob):
     files = glob.iglob(markdown_glob, recursive=True)
+    passing = True
     with ThreadPoolExecutor() as executor:
-        executor.map(lint_markdown_file, files)
+        results = executor.map(lint_markdown_file, files)
+        for result in results:
+            if result is False:
+                passing = False
+
+    return passing
 
 
-if __name__ == '__main__':
+def main(argv=None):
     parser = argparse.ArgumentParser(description='Markdown globs')
     parser.add_argument(
         'globs',
@@ -82,7 +94,15 @@ if __name__ == '__main__':
         nargs='+',
         help='a glob of Markdown files to lint',
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     markdown_globs = args.globs
+    passing = True
     with ThreadPoolExecutor() as executor:
-        executor.map(lint_markdown_glob, markdown_globs)
+        results = executor.map(lint_markdown_glob, markdown_globs)
+        for result in results:
+            if result is False:
+                passing = False
+
+    if not passing:
+        sys.exit(1)
+    sys.exit(0)
