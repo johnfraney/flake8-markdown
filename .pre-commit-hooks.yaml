@@ -1,0 +1,6 @@
+-   id: flake8-markdown
+    name: flake8-markdown
+    description: '`flake8-markdown` is a command-line utility that runs `flake8` on Python fenced code blocks in Markdown files.'
+    entry: flake8-markdown
+    language: python
+    types: [markdown]
