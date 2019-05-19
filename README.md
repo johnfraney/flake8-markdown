@@ -3,7 +3,7 @@
 [
 ![PyPI](https://img.shields.io/pypi/v/flake8-markdown.svg)
 ![PyPI](https://img.shields.io/pypi/pyversions/flake8-markdown.svg)
-![PyPI](https://img.shields.io/pypi/l/flake8-markdown.svg)
+![PyPI](https://img.shields.io/github/license/johnfraney/flake8-markdown.svg)
 ](https://pypi.org/project/flake8-markdown/)
 [![TravisCI](https://travis-ci.org/johnfraney/flake8-markdown.svg?branch=master)](https://travis-ci.org/johnfraney/flake8-markdown)
 
