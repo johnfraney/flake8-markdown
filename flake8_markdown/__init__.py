@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from .constants import SUBPROCESS_ARGS
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def non_matching_lookbehind(pattern):
