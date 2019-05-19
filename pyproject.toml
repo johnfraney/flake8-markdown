@@ -1,15 +1,32 @@
 [tool.poetry]
 name = "flake8-markdown"
 version = "0.1.0"
-description = ""
+description = "Lints Python code blocks in Markdown files using flake8"
 authors = ["John Franey <johnfraney@gmail.com>"]
+repository = "https://github.com/johnfraney/flake8-markdown"
+homepage = "https://github.com/johnfraney/flake8-markdown"
+license = "MIT"
+readme = "README.md"
+keywords = ["flake8", "markdown", "lint"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Flake8",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENCE",
+]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
+twine = "^1.13"
 
 [tool.poetry.scripts]
 flake8-markdown = 'flake8_markdown:main'

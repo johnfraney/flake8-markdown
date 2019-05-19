@@ -5,6 +5,8 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
+from .constants import SUBPROCESS_ARGS
+
 __version__ = '0.1.0'
 
 
@@ -50,9 +52,8 @@ def lint_markdown_file(markdown_file_path):
         match_text = match.lstrip()
         flake8_process = subprocess.run(
             ['flake8', '-'],
-            capture_output=True,
             input=match_text,
-            encoding='ascii',
+            **SUBPROCESS_ARGS,
         )
         flake8_output = flake8_process.stdout
         markdown_line_number = code_block_start_lines[match_number] + 1
