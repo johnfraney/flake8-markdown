@@ -11,6 +11,14 @@ Flake8 Markdown lints [GitHub-style Python code blocks](https://help.github.com/
 
 This package helps improve a Python project's documentation by ensuring that code samples are error-free.
 
+## Installation
+
+Flake8 Markdown can be installed from PyPI using `pip` or your package manager of choice:
+
+```
+pip install flake8-markdown
+```
+
 ## Usage
 
 ### CLI
@@ -42,6 +50,10 @@ repos:
     hooks:
       - id: flake8-markdown
 ```
+
+## Code of Conduct
+
+Everyone interacting in the project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct](https://www.pypa.io/en/latest/code-of-conduct/).
 
 ## History
 
