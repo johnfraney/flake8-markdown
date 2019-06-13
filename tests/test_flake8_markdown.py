@@ -7,6 +7,7 @@ from flake8_markdown.constants import SUBPROCESS_ARGS
 FILE_WITH_ERRORS = 'tests/samples/basic.md'
 FILE_WITHOUT_ERRORS = 'tests/samples/good.md'
 FILE_WITH_EMPHASIZED_LINES = 'tests/samples/emphasized_lines.md'
+FILE_WITH_PYCON_BLOCKS = 'tests/samples/pycon.md'
 
 
 @pytest.fixture
@@ -73,6 +74,18 @@ def test_run_with_file_containing_emphasized_lines(run_flake8_markdown):
     assert flake8_markdown_process.returncode == 1
     # noqa:
     assert "tests/samples/emphasized_lines.md:6:1: F821 undefined name 'emphasized_imaginary_function'" in output
+
+
+def test_run_with_file_containing_pycon_blocks(run_flake8_markdown):
+    flake8_markdown_process = run_flake8_markdown(FILE_WITH_PYCON_BLOCKS)
+    output = flake8_markdown_process.stdout
+    print(output)
+    assert flake8_markdown_process.returncode == 1
+    error_count = len(output.splitlines())
+    assert error_count == 3
+    assert 'tests/samples/pycon.md:10:11: F821' in output
+    assert 'tests/samples/pycon.md:17:10: E999' in output
+    assert 'tests/samples/pycon.md:25:1: F821' in output
 
 
 def test_run_with_glob(run_flake8_markdown):
