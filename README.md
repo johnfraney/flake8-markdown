@@ -11,6 +11,11 @@ Flake8 Markdown lints [GitHub-style Python code blocks](https://help.github.com/
 
 This package helps improve a Python project's documentation by ensuring that code samples are error-free.
 
+## Features
+
+- Lints code blocks containing regular Python and Python interpreter code ([`pycon`](http://pygments.org/docs/lexers/#pygments.lexers.python.PythonConsoleLexer))
+- [pre-commit](#pre-commit-hook) hook to lint on commit
+
 ## Installation
 
 Flake8 Markdown can be installed from PyPI using `pip` or your package manager of choice:
@@ -46,7 +51,7 @@ To enable this hook in your local repository, add the following `repo` to your `
 # .pre-commit-config.yaml
 repos:
   - repo: https://github.com/johnfraney/flake8-markdown
-    rev: v0.1.1
+    rev: v0.2.0
     hooks:
       - id: flake8-markdown
 ```
@@ -56,6 +61,12 @@ repos:
 Everyone interacting in the project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct](https://www.pypa.io/en/latest/code-of-conduct/).
 
 ## History
+
+## [0.2.0] - 2019-06-14
+
+### Added
+
+- [`pycon`](http://pygments.org/docs/lexers/#pygments.lexers.python.PythonConsoleLexer) code block support
 
 ### [0.1.1] - 2019-05-19
 
