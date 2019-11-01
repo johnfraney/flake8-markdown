@@ -1,0 +1,32 @@
+site_name: Flake8 Markdown
+site_url: 'https://johnfraney.github.io/flake8-markdown/'
+repo_name: 'johnfraney/flake8-markdown'
+repo_url: 'https://github.com/johnfraney/flake8-markdown'
+
+nav:
+  - Home: index.md
+
+# Copyright
+copyright: 'Copyright &copy; 2019 John Franey'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/johnfraney'
+
+# Theme configuration
+theme:
+  name: 'material'
+  logo:
+    icon: 'palette'
+  palette:
+    primary: 'black'
+
+# Google Analytics
+google_analytics:
+  - 'UA-125394319-2'
+  - auto
+
+# Extensions
+markdown_extensions:
+  - codehilite

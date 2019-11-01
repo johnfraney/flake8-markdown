@@ -10,6 +10,8 @@ flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
+mkdocs = "^1.0.4"
+mkdocs-material = "^4.4.3"
 
 [tool.poetry.scripts]
 flake8-markdown = 'flake8_markdown:main'
