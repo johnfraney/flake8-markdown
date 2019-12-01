@@ -35,7 +35,7 @@ You can use Flake8 Markdown as a CLI tool using the `flake8-markdown` command.
 Example:
 
 ```console
-$ flake8-markdown flake8-markdown "tests/samples/*.md"
+$ flake8-markdown "tests/samples/*.md"
 tests/samples/emphasized_lines.md:6:1: F821 undefined name 'emphasized_imaginary_function'
 tests/samples/basic.md:8:48: E999 SyntaxError: EOL while scanning string literal
 tests/samples/basic.md:14:7: F821 undefined name 'undefined_variable'
