@@ -9,3 +9,6 @@ python:
 cache: pip
 install: pip install tox-travis
 script: tox
+branches:
+  only:
+    - master
