@@ -84,7 +84,10 @@ def test_run_with_file_containing_pycon_blocks(run_flake8_markdown):
     error_count = len(output.splitlines())
     assert error_count == 3
     assert 'tests/samples/pycon.md:10:11: F821' in output
-    assert 'tests/samples/pycon.md:17:10: E999' in output
+    if 'PyPy' in sys.version:
+        assert 'tests/samples/pycon.md:17:1: E999' in output
+    else:
+        assert 'tests/samples/pycon.md:17:10: E999' in output
     assert 'tests/samples/pycon.md:25:1: F821' in output
 
 
