@@ -25,7 +25,7 @@ python = "^3.6"
 flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.0"
+pytest = "^5.0"
 
 [tool.poetry.scripts]
 flake8-markdown = 'flake8_markdown:main'
