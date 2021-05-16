@@ -54,6 +54,8 @@ def test_run_with_matching_single_file_with_linting_errors(run_flake8_markdown):
     else:
         assert 'tests/samples/basic.md:8:48: E999' in output
     assert 'tests/samples/basic.md:14:7' in output
+    # this case covers the shorthand ```py
+    assert 'tests/samples/basic.md:20:1: F401' in output
 
 
 def test_run_with_matching_single_file_wihout_linting_errors(run_flake8_markdown):
