@@ -21,7 +21,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
