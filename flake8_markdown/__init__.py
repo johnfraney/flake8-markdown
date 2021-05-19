@@ -45,7 +45,7 @@ regex_rule = ''.join([
     # Use non-matching group instead of a lookbehind because the code
     # block may have line highlighting hints. See:
     # https://python-markdown.github.io/extensions/fenced_code_blocks/#emphasized-lines
-    non_matching_group('^```(python|pycon).*$'),
+    non_matching_group('^```(python|pycon|py).*$'),
     matching_group(ONE_OR_MORE_LINES_NOT_GREEDY),
     non_matching_lookahead('^```')
 ])
