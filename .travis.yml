@@ -1,4 +1,4 @@
-dist: xenial  # required for Python >= 3.7
+dist: focal
 sudo: false
 language: python
 python:
