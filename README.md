@@ -51,7 +51,7 @@ To enable this hook in your local repository, add the following `repo` to your `
 # .pre-commit-config.yaml
 repos:
   - repo: https://github.com/johnfraney/flake8-markdown
-    rev: v0.3.0
+    rev: v0.4.0
     hooks:
       - id: flake8-markdown
 ```
@@ -62,15 +62,26 @@ Everyone interacting in the project's codebases, issue trackers, chat rooms, and
 
 ## History
 
-## [0.3.0] - 2021-10-19
+### [0.4.0] - 2022-09-11
 
-### Added
+#### Added
+
+- Added support for `flake8` v5
+- Added support for `python` 3.10
+
+#### Removed
+
+- Dropped support for `python` 3.6
+
+### [0.3.0] - 2021-10-19
+
+#### Added
 
 - Added support for `flake8` v4
 
-## [0.2.0] - 2019-06-14
+### [0.2.0] - 2019-06-14
 
-### Added
+#### Added
 
 - [`pycon`](http://pygments.org/docs/lexers/#pygments.lexers.python.PythonConsoleLexer) code block support
 

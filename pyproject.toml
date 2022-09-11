@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-markdown"
-version = "0.3.0"
+version = "0.4.0"
 description = "Lints Python code blocks in Markdown files using flake8"
 authors = ["John Franey <johnfraney@gmail.com>"]
 repository = "https://github.com/johnfraney/flake8-markdown"
