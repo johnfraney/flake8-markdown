@@ -51,7 +51,7 @@ To enable this hook in your local repository, add the following `repo` to your `
 # .pre-commit-config.yaml
 repos:
   - repo: https://github.com/johnfraney/flake8-markdown
-    rev: v0.4.0
+    rev: v0.5.0
     hooks:
       - id: flake8-markdown
 ```
@@ -61,6 +61,17 @@ repos:
 Everyone interacting in the project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct](https://www.pypa.io/en/latest/code-of-conduct/).
 
 ## History
+
+### [0.5.0] - 2023-09-04
+
+#### Added
+
+- Added CI for `python` 3.11
+- Added funding file
+
+#### Removed
+
+- Dropped support for `python` 3.7 and Pypy 3
 
 ### [0.4.0] - 2022-09-11
 
