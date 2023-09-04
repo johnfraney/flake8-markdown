@@ -16,12 +16,10 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Quality Assurance",
 ]
-include = [
-    "LICENSE",
-]
+include = ["LICENSE"]
 
 [tool.poetry.dependencies]
-python = ">=3.7"
+python = ">=3.8"
 flake8 = ">=5.0.0"
 
 [tool.poetry.dev-dependencies]

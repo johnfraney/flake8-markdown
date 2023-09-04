@@ -20,7 +20,7 @@ This package helps improve a Python project's documentation by ensuring that cod
 
 Flake8 Markdown can be installed from PyPI using `pip` or your package manager of choice:
 
-```
+```shell
 pip install flake8-markdown
 ```
 
