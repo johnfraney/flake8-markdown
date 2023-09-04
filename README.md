@@ -5,7 +5,7 @@
 ![PyPI](https://img.shields.io/pypi/pyversions/flake8-markdown.svg)
 ![PyPI](https://img.shields.io/github/license/johnfraney/flake8-markdown.svg)
 ](https://pypi.org/project/flake8-markdown/)
-[![TravisCI](https://travis-ci.com/johnfraney/flake8-markdown.svg?branch=master)](https://travis-ci.com/johnfraney/flake8-markdown)
+[![Tox](https://github.com/johnfraney/flake8-markdown/actions/workflows/github-actions-nox.yml/badge.svg)](https://github.com/johnfraney/flake8-markdown/actions/workflows/github-actions-nox.yml)
 
 Flake8 Markdown lints [GitHub-style Python code blocks](https://help.github.com/en/articles/creating-and-highlighting-code-blocks#fenced-code-blocks) in Markdown files using [`flake8`](https://flake8.readthedocs.io/en/stable/).
 
