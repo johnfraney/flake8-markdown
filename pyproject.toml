@@ -19,7 +19,7 @@ classifiers = [
 include = ["LICENSE"]
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.9"
 flake8 = ">=5.0.0"
 
 [tool.poetry.dev-dependencies]
