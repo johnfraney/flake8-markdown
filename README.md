@@ -5,6 +5,7 @@
 ![PyPI](https://img.shields.io/pypi/pyversions/flake8-markdown.svg)
 ![PyPI](https://img.shields.io/github/license/johnfraney/flake8-markdown.svg)
 ](https://pypi.org/project/flake8-markdown/)
+[![PyPI downloads per month](https://img.shields.io/pypi/dm/flake8-markdown.svg)](https://pypi.python.org/pypi/flake8-markdown/)
 [![Tox](https://github.com/johnfraney/flake8-markdown/actions/workflows/github-actions-tox.yml/badge.svg)](https://github.com/johnfraney/flake8-markdown/actions/workflows/github-actions-tox.yml)
 
 Flake8 Markdown lints [GitHub-style Python code blocks](https://help.github.com/en/articles/creating-and-highlighting-code-blocks#fenced-code-blocks) in Markdown files using [`flake8`](https://flake8.readthedocs.io/en/stable/).
